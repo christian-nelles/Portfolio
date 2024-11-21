@@ -1,0 +1,159 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    cursor: none;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 4;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    cursor: none;
+}
+header a:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 50px white, 0 0 25px rgba(255, 255, 255, 0.466);
+}
+header {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+}
+header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.fa-solid{
+    width: 16px;
+    padding-right: 10px;
+}
+i{
+    width: 50px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+h2{
+    margin-bottom: 100px;
+}
+
+.input{
+    border-radius: 50px;
+}
+
+form{
+    width: 1000px;
+}
+
+h1{
+    font-family: brush script mt;
+    font-size: 100px;
+}
+
+img{
+    width: 500px;
+}
+
+.lien{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.onglet{
+    margin: 0 30px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.place, select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+  
+.submit {
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    font-size: 10px;
+    cursor: none;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    body{
+        font-size: 15px;
+    }
+    header{
+        font-size: 10px;
+    }
+    form{
+        padding: 10px;
+    }
+    input{
+        height: 30px;
+    }
+    textarea{
+        height: 50px;
+    }
+    footer{
+        font-size: 7px;
+        padding: 5px;
+    }
+}
+  
+/* Tablettes */
+@media (min-width: 481px) and (max-width: 1024px) {
+    form{
+        padding: 10px;
+    }
+    input{
+        height: 30px;
+    }
+    textarea{
+        height: 100px;
+    }
+    footer{
+        font-size: 7px;
+        padding: 5px;
+    }
+}

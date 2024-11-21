@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+header{ 
+    display: flex;
+    flex-direction: row;
+    background-color: #737882;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    margin-bottom: 100px;
+}
+
+input{
+    border-radius: 50px;
+}
+
+h1{
+    font-family: brush script mt;
+    font-size: 100px;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.lien{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.onglet{
+    margin: 0 30px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+
+form{
+    margin-right: 30px;
+}
+
+.mosaique{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+
+@media (max-width: 600px) {
+    *{
+        header{
+            flex-direction: column;
+        }
+        .onglet{
+    margin: 0 0px;
+    padding: 10px;
+        }
+    }
+}

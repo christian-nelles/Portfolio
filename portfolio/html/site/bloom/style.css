@@ -1,0 +1,167 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;    }
+
+
+    .non * {
+        filter: hue-rotate(180deg) drop-shadow(16px 16px 20px red) invert(75%);
+    }
+
+    .non:hover{
+        background-image: url(https://media.tenor.com/Nr43LEFJdNMAAAAM/tiger-sitting-tiger.gif);
+    }
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #737882;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+input{
+    border-radius: 50px;
+}
+
+h1{
+    font-family: brush script mt;
+    font-size: 100px;
+}
+
+img{
+    height: 145px;
+    width: 200px;
+}
+
+.lien{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.onglet{
+    margin: 0 30px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+form{
+    margin-right: 30px;
+}
+
+.corp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.un{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre{
+    height: 100px;
+    width: 347px;
+}
+
+p{
+    text-align: center;
+}
+
+.images{
+    border-top: solid black 1px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+img{
+    box-shadow: 10px black;
+    margin: 5px;
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    border-top: solid black 1px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.cat{
+    margin: 0 5px;
+}
+
+.read{
+    margin-top: 20px;
+}
+
+footer{
+    padding: 25px 0;
+    margin-top: 50px;
+    display: flex;
+    background-color: #737882;
+}
+
+
+@media (max-width: 600px) {
+    *{
+      .corp{
+        padding: 0 50px;
+            }
+        header{
+            flex-direction: column;
+        }
+        .onglet{
+    margin: 0 0px;
+    padding: 10px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        .service{
+            flex-direction: column;
+        }
+        .images{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  .non h1,.non h2,.non p,.non img,.non header,.non footer,.non form,.non .read,.non .onglet{
+    animation: textShake 0.2s infinite;
+  }
+  
+  @keyframes textShake {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(10px, -10px) rotate(5deg); }
+    50% { transform: translate(-10px, 10px) rotate(-5deg); }
+    75% { transform: translate(5px, -5px) rotate(3deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+  }

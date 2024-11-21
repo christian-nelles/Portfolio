@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 1024px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 25vh;
+    align-items: center;
+}
+
+img{
+    width: 20vw;
+}

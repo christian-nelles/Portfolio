@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="lien">
+            <a class="onglet" href="./index.html">
+                Home
+            </a>
+            <a class="onglet" href="./Entreprise copy.html">
+                Entreprise
+            </a>
+            <a class="onglet" href="./Réalisations.html">
+                Réalisations
+            </a>
+            <a class="onglet" href="./Contact.html">
+                Contact
+            </a>
+        </div>
+            <form>
+                <input class="input" type="text" id="fname" name="fname">
+            </form>
+    </header>
+    <div class="container" id="formContainer">
+        <form action="action_page.php">
+            <label for="fname">Prenom</label>
+            <input class="place" type="text" id="fname" name="firstname">
+    
+            <label for="lname">Nom</label>
+            <input class="place" type="text" id="lname" name="lastname">
+    
+            <label for="country">Pays</label>
+            <select id="country" name="country">
+                <option value="Francakis">Francais</option>
+                <option value="English">English</option>
+                <option value="Español">Español</option>
+            </select>
+    
+            <label for="subject">Sujet</label>
+            <textarea id="subject" name="subject" style="height:200px"></textarea>
+    
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+<script>
+    const countrySelect = document.getElementById('country');
+    const formContainer = document.getElementById('formContainer');
+
+    countrySelect.addEventListener('change', function() {
+        if (this.value === 'Minecraft') {
+            formContainer.classList.add('minecraft-bg');
+        } else {
+            formContainer.classList.remove('minecraft-bg');
+        }
+    });
+</script>
+</html>

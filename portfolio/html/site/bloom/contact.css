@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;  
+}
+
+header{ 
+    display: flex;
+    flex-direction: row;
+    background-color: #737882;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    margin-bottom: 100px;
+}
+
+.input{
+    border-radius: 50px;
+}
+
+form{
+    margin-right: 30px;
+}
+
+h1{
+    font-family: brush script mt;
+    font-size: 100px;
+}
+
+img{
+    width: 500px;
+}
+
+.lien{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.onglet{
+    margin: 0 30px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.place, select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  .submit {
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+        .minecraft-bg {
+            background-image: url('https://preview.redd.it/4y2wk8xtlmy71.png?auto=webp&s=4e2bcae785c599b229b9a2077ac62b7baada4dcd');
+            background-size: cover; 
+            background-position: center; 
+            min-height: 100vh; 
+            color: white; 
+        }
+
+  @media (max-width: 600px) {
+    *{
+        header{
+            flex-direction: column;
+        }
+        .onglet{
+    margin: 0 0px;
+    padding: 10px;
+        }
+    }
+}

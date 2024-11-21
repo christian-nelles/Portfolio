@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+body, html {
+    height: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: none;
+    background-color: rgb(21, 21, 21);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 20px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+}
+
+.image-container {
+    scroll-snap-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px) brightness(0.5);
+}
+
+.image-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    text-align: center;
+}
+
+.cr, .lo, .me, .sd{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    text-align: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cr{
+    bottom: 20px;
+}
+.lo{
+    bottom: 150px;
+}
+.me{
+    bottom: 50px;
+}
+.sd{
+    bottom: 150px;
+}
+
+a{
+    color: white;
+    cursor: none;
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    header{
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+    .non{
+        display: none;
+    }
+    .scroll-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .image-container {
+        height: 24vh;
+    }
+    .image-container p{
+        display: none;
+    }
+    .image-title {
+        font-size: 2rem;
+    }
+}
+  
+/* Tablettes */
+@media (min-width: 481px) and (max-width: 1024px) {
+    header{
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+    .non{
+        display: none;
+    }
+    .image-container {
+        height: 24vh;
+    }
+    .image-container p{
+        display: none;
+    }
+    .image-title {
+        font-size: 3rem;
+    }
+}
