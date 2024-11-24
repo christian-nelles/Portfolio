@@ -7,10 +7,25 @@
         <link rel="stylesheet" href="../css/galerie.css">
     </head>
     <body>
+        <div id="black-screen">
+            <img src="../images/chargement.gif">
+            <h1>CHARGEMENT...</h1>
+        </div>
         <div>
             <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.44/build/spline-viewer.js"></script>
             <spline-viewer url="https://prod.spline.design/qxHH07OTOeMhLmlz/scene.splinecode">
             </spline-viewer>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <section id="section-to-hide">
+            <div id="overlay"></div>
+            <p class="bulle slider close">
+                <b>Ici tu verras tout mes chefs d'oeuvres.<br> Comme dans un musée on touche avec les yeux !</b>
+                <button id="button">OK</button>
+            </p>
+            <img src="../images/art.png">
+        </section>
+        <footer>.</footer>
     </body>
+    <script src="../js/chargement.js"></script>
 </html>

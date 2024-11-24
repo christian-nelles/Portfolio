@@ -1,0 +1,58 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url('./c1388267-320c-41fa-ad68-916848607ff7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+@font-face {
+    font-family: 'Shoguns Clan';
+    src: url('./shoguns-clan.regular.ttf') format('truetype');
+}
+  
+b {
+    font-family: 'Shoguns Clan', sans-serif;
+}
+  
+p{
+    color: #5c517b;
+    font-family: 'Shrikhand', sans-serif;
+    margin: 0;  
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, rgba(56, 56, 56, 0.95), rgba(56, 56, 56, 0.306));
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 70vh;
+}
+
+h1{
+    font-size: 120px;
+    transform: translate(10px, -10px) rotate(-5deg);
+}
+
+h2{
+    font-family: 'Shrikhand', sans-serif;
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+}
+
+i{
+    margin-left: 10px;
+}
+
+li i {
+    color: rgb(143, 134, 159); /* Gris-lavande */
+  }
+  

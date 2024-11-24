@@ -1,30 +1,122 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    box-sizing: border-box;
+}
+body {
+    background-color: #5b5b5b;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    flex-direction: column;
 }
 
-h1 {
+canvas {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #87ceeb, #ffffff);
+    border: 1px solid #ddd;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.jeu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+ul{
+    margin: 5vh 15vw 0 0;
+    padding: 1vh 3vh 1vh 5vh;
+    line-height: 5vh;
+    background-color: #333;
+    color: white;
+}
+
+canvas{
+    margin: 2vh;
+}
+
+footer{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    color: #333;    
+    background-color: #333;
+    bottom: 0px;
+    width: 100%;
+    height: 48px;
+    box-shadow: 0 0 10px black;
+}
+
+section img{
+    position: absolute;
+    width: 60vw;
+    transform: scaleX(-1);
+    bottom: 48px;
+    right: -150px;
+    pointer-events: none;
+}
+
+.bulle {
+    position: absolute;
+    background-color: #f1f1f1;
     color: #333;
+    padding: 10px 25px;
+    border-radius: 8px 0 8px 8px;
+    font-size: 40px;
+    line-height: 1.5;
+    border: 1px solid #ddd;
+    margin-top: 77vh;
+    margin-left: 5vh;
+    z-index: 3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+.bulle::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: transparent #f1f1f1 transparent transparent;
+    transform: translateY(100%);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+button{
+    padding: 10px;
+    font-weight: bolder;
 }
 
-nav li {
-    display: inline;
-    margin: 0 10px;
+.slider {
+    position: absolute;
+    top: 0;
+    transition: all 1s;
+  }
+  
+  .slider.close {
+    top: 100%;
+    height: 0;
+  }
+
+  #section-to-hide {
+    transition: opacity 0.5s ease-out; /* Optionnel : transition pour un effet de fondu */
+    z-index: 1;
 }
 
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-a:hover {
-    text-decoration: underline;
-}

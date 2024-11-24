@@ -7,9 +7,37 @@
         <link rel="stylesheet" href="../css/jeu.css">
     </head>
     <body>
-        <main>
-            <canvas id="jeuCanvas" width="400" height="400"></canvas>
-        </main>
+        <audio id="background-audio" loop>
+            <source src="../son/JV Site.mp3" type="audio/mpeg">
+        </audio>
+        <section class="jeu">
+            <div>
+                <canvas id="game" width="800" height="400"></canvas>
+                <div id="game-over">
+                    <p>Game Over!</p>
+                    <p>Score: <span id="final-score">0</span></p>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>Espace pour lancer le jeu</li>
+                    <li>Espace pour sauter</li>
+                    <li>Espace pour rejouer</li>
+                    <li>Bref Espace...</li>
+                </ul>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <section id="section-to-hide">
+            <div id="overlay"></div>
+            <p class="bulle slider close">
+                <b>Tiens, tiens, tiens... À ce que je vois on a un gamer !<br> Amuse toi bien sur ce petit jeu</b>
+            </p>
+            <img src="../images/jeu.png">
+        </section>
+        <footer>.</footer>
     </body>
     <script src="../js/script.js"></script>
+    <script src="../js/dialogue.js"></script>
+    <script src="../js/son.js"></script>
 </html>

@@ -1,0 +1,16 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Empêche le scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+canvas {
+    display: block;
+    cursor: crosshair;
+    background-color: #fff;
+}
