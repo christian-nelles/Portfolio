@@ -5,17 +5,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Réseaux</title>
         <link rel="stylesheet" href="../css/réseaux.css">
+        <script src="https://kit.fontawesome.com/7262544113.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <main>
-            <h1>Mes réseaux sociaux</h1>
-            <ul>
-                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-            </ul>
+            <div class="phone">
+            <!-- Barre de statut -->
+            <div class="status-bar">
+                <span class="notifications">
+                <span class="timeup">16:45</span>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-refresh"></i>
+                </span>
+                <span class="status-icons">
+                    <i class="fa fa-vibrate"></i>
+                    <i class="fa fa-wifi"></i>
+                    <i class="fa fa-signal"></i>
+                    <i class="fa fa-battery-full"></i>
+                    <span class="battery-percent">91%</span>
+                </span>
+            </div>
+        
+            <!-- Widget -->
+            <a href="https://www.google.com/search?q=m%C3%A9t%C3%A9o&client=firefox-b-d&sca_esv=c744cb070de47b7e&sxsrf=ADLYWIICiH-_yzMkABwEPHbmpFHN3NeBPg%3A1732536345414&ei=GWhEZ8X2GPqLkdUPwZjiiQQ&ved=0ahUKEwiF57bruPeJAxX6RaQEHUGMOEEQ4dUDCA8&uact=5&oq=m%C3%A9t%C3%A9o&gs_lp=Egxnd3Mtd2l6LXNlcnAiB23DqXTDqW8yEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMgUQABiABDINEAAYgAQYsQMYQxiKBTILEAAYgAQYsQMYgwEyChAAGIAEGEMYigUyEBAAGIAEGLEDGEMYgwEYigUyBRAAGIAEMgUQABiABEiYDlCNB1iRC3ABeAGQAQCYAXegAdABqgEDMS4xuAEDyAEA-AEBmAIDoALmAcICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIQEAAYgAQYsAMYQxjJAxiKBcICChAAGIAEGEYY-QHCAgoQABiABBixAxgKwgIHEAAYgAQYCsICDRAAGIAEGLEDGIMBGArCAiQQABiABBhGGPkBGJcFGIwFGN0EGEYY-QEY9AMY9QMY9gPYAQGYAwCIBgGQBgq6BgYIARABGBOSBwMyLjGgB8gR&sclient=gws-wiz-serp" class="status-barre">
+                <span class="time">Dim. 22 décembre <h1>16:45</h1></span>
+                <span class="weather"><p><i class="fa-solid fa-location-dot"></i> France</p><br> <h1><i class="fa-solid fa-cloud"></i> 15°</h1><br> Indice UV : Faible</span>
+            </a>
+
+            <div>
+                <form class="widget" action="https://www.google.com/search" method="get">
+                    <input type="text" name="q" placeholder="Rechercher avec Google" class="search-bar" required>
+                </form>
+            </div>
+        
+            <!-- Menu grid -->
+            <div class="menu-grid">
+                <a href="https://tiktok.com"  class="app-icon"><img src="../images/logo/tiktok.png">TikTok</a>
+                <a href="https://discord.com"  class="app-icon"><img src="../images/logo/discord.png">Discord</a>
+                <a href="https://x.com"  class="app-icon"><img src="../images/logo/twitter.png">X</a>
+                <a href="https://github.com/christian-nelles"  class="app-icon"><img src="../images/logo/github.png">Github</a>
+        
+                <a href="https://twitch.com"  class="app-icon"><img src="../images/logo/twitch.jpg">Twitch</a>
+                <a href="https://www.linkedin.com/in/christian-nelles-1b89a2338/"  class="app-icon"><img src="../images/logo/linkedin.png">LinkedIn</a>
+                <a href="https://instagram.com"  class="app-icon"><img src="../images/logo/instagram.jpg">Instagram</a>
+                <a href=""  class="app-icon"><img src="../images/logo/galerie.png">Galerie</a>
+        
+                <a href=""  class="app-icon"><img src="../images/logo/calculatrice.jpg">Calculatrice</a>
+                <a href="https://snapchat.com"  class="app-icon"><img src="../images/logo/snapchat.jpg">Snapchat</a>
+                <a href=""  class="app-icon"><img src="../images/logo/contact.png">Contacts</a>
+                <a href=""  class="app-icon"><img src="../images/logo/note.png">Notes</a>
+            </div>
+        
+            <!-- Dock -->
+            <div class="dock">
+                <a href="https://www.google.fr/" class="dock-icon"><img src="../images/logo/chrome.png"></a>
+                <a href="https://play.google.com/store/apps?hl=fr&pli=1" class="dock-icon"><img src="../images/logo/playstore.webp"></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTLpLqMmMwlsmjNCmvPdgKrpGLBQDHzRvlFrlBPGcMzvpHhFPBpFsgQvtcWqBMZLDQMqML" class="dock-icon"><img src="../images/logo/gmail.jpg"></a>
+                <a href="https://www.google.fr/maps/preview" class="dock-icon"><img src="../images/logo/maps.png"></a>
+                <a href="https://www.youtube.com/@keralte9873" class="dock-icon"><img src="../images/logo/youtube.jpg"></a>
+            </div>
+        
+            <!-- Barre inférieure -->
+            <div class="bottom-bar">
+                <div class="menu-button"></div>
+            </div>
+        </div>
+        
         </main>
-        <footer>.</footer>
     </body>
 </html>
